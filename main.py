@@ -8,6 +8,8 @@ word = input("Enter a word: ").lower()
 word = list(word)
 for i in range(0,len(word)):
     #find the index of the letter in the alphabet
+    shift_number = input("Enter a number u wish to shift by:")
     index = alphabet.index(word[i])
-    #replace the letter with the letter 13 places after it
-    word[i] = alphabet[index+13]
+    #replace the letter with the the letter of the shifted index
+    word[i] = alphabet[index+ shift_number]
+    print(word)
